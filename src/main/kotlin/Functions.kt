@@ -8,7 +8,7 @@ fun main(args: Array<String>) {
     println(esMayorDeEdad(15))
     println(esMayorDeEdad(19))
 
-    val persona = Persona("Alejandro", 32)
+    val persona = Person("Alejandro", 32)
     println("${persona.nombre} tiene ${persona.edad} años y es ${persona.esMayorDeEdad}")*/
 
     val dt = Calendar.getInstance().timeInMillis

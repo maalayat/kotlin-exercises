@@ -1,7 +1,7 @@
 /**
  * Created by alejo on 30/03/17.
  */
-class Persona(val nombre: String, val edad: Int) {
+class Person(val nombre: String, val edad: Int) {
 
     val esMayorDeEdad : Boolean
 //    get() {
