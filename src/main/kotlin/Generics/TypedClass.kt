@@ -22,7 +22,7 @@ fun main(args: Array<String>) {
     Any
     Found:
     String?*/
-    val t2 = TypedClass<String?>(null) //not compile
+    //val t2 = TypedClass<String?>(null) //not compile
 
     val tc1 = TypedClass2<String>()
     /*Type mismatch.
@@ -30,7 +30,7 @@ fun main(args: Array<String>) {
       TypedClass2<Any>
       Found:
       TypedClass2<String>*/
-    val tc2: TypedClass2<Any> = tc1 //not compile
+    //val tc2: TypedClass2<Any> = tc1 //not compile
 
     val tc3 = TypedClass3<String>()
     val tc4: TypedClass3<Any> = tc3 //ok
