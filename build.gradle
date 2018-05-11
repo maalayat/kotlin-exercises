@@ -2,7 +2,7 @@ group 'kotlin-exercises'
 version '1.0-SNAPSHOT'
 
 buildscript {
-    ext.kotlin_version = '1.2.31'
+    ext.kotlin_version = '1.2.41'
 
     repositories {
         mavenCentral()
