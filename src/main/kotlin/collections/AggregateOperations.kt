@@ -20,16 +20,16 @@ fun main(args: Array<String>) {
 
     /************** fold ****************/
     //Acumula el valor que comienza con un valor inicial y aplica una operación del primer al último elemento de una colección.
-    println(list.fold(4) { total, next -> total + next }) //: 25
+    println(list.fold(4) { actual, next -> actual + next }) //: 25
 
     /**************** foldRight *******************/
     //lo mismo q fold pero inicia desde el ultimo valor al primero
-    println(list.foldRight(5) { total, next -> total + next }) //:26
+    println(list.foldRight(5) { actual, next -> actual + next }) //:26
     
     
     /************** reduce *********************/
     //lo mismo que fold pero sin valor inicial
-    println(list.reduce { total, next -> total + next }) //: 21
+    println(list.reduce { actual, next -> actual + next }) //: 21
 
     /****************** forEach *****************/
     list.forEach { print("$it, ") } //: 1, 2, 3, 4, 5, 6,
