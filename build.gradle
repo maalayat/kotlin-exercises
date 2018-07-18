@@ -4,6 +4,7 @@ version '1.0-SNAPSHOT'
 buildscript {
     ext.kotlin_version = '1.2.41'
     ext.funKTionale_version = '1.2'
+    ext.kovenant_version = '3.3.0'
 
     repositories {
         mavenCentral()
@@ -21,9 +22,11 @@ repositories {
 }
 
 dependencies {
-    // funKTionale
-    //compile "org.funktionale:funktionale-all:$funKTionale_version"
+    // funKTionale: Functional constructs and patterns for Kotlin
     compile "org.funktionale:funktionale-either:$funKTionale_version"
+
+    // Kovenant: Promises for Kotlin
+    compile "nl.komponents.kovenant:kovenant:$kovenant_version"
 
     // kotlin
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
