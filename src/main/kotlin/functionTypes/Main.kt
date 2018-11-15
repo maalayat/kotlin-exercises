@@ -17,7 +17,7 @@ fun main(args: Array<String>) {
     val intPlus2: Int.(Int) -> Int = Int::plus
     println(2.intPlus2(3))
 
-    val intFunction : (Int) -> Int = IntTransformer()
+    val intFunction: (Int) -> Int = IntTransformer()
     println(intFunction(2))
 }
 

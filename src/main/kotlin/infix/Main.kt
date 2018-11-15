@@ -1,7 +1,7 @@
 package infix
 
-import infix.Rank.*
-import infix.Suit.*
+import infix.Rank.QUEEN
+import infix.Suit.DIAMONDS
 
 fun pruebaInfix() {
     val card1 = QUEEN.of(DIAMONDS) // Q de diamantes

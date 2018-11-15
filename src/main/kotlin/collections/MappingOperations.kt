@@ -9,7 +9,7 @@ fun main(args: Array<String>) {
     // se necesita [1a, 1b, 2a, 2b, 3a, 3b, 4a, 4b]
     // si usamos dos map?
     println(list.map { m1 -> list2.map { m2 -> "$m1$m2" } }) //:    [[1a, 1b], [2a, 2b], [3a, 3b], [4a, 4b], [5a, 5b], [6a, 6b]]
-    println(list.flatMap { m1 -> list2.map { m2 ->  "$m1$m2"} }) //:[1a, 1b, 2a, 2b, 3a, 3b, 4a, 4b, 5a, 5b, 6a, 6b]
+    println(list.flatMap { m1 -> list2.map { m2 -> "$m1$m2" } }) //:[1a, 1b, 2a, 2b, 3a, 3b, 4a, 4b, 5a, 5b, 6a, 6b]
 
     /*************************** groupBy ***************************/
     //Devuelve un mapa de los elementos de la colección original agrupados por el resultado de la función dada

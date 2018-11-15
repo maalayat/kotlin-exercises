@@ -25,8 +25,8 @@ fun main(args: Array<String>) {
     /**************** foldRight *******************/
     //lo mismo q fold pero inicia desde el ultimo valor al primero
     println(list.foldRight(5) { actual, next -> actual + next }) //:26
-    
-    
+
+
     /************** reduce *********************/
     //lo mismo que fold pero sin valor inicial
     println(list.reduce { actual, next -> actual + next }) //: 21
@@ -36,8 +36,7 @@ fun main(args: Array<String>) {
     println()
 
     /****************** forEachIndexed ****************/
-    list.forEachIndexed {
-        index, value ->
+    list.forEachIndexed { index, value ->
         println("$index al valor $value") //:0 al valor 1
         //:1 al valor 2
         //:2 al valor 3

@@ -1,10 +1,9 @@
 package collections
 
 
-
 fun main(args: Array<String>) {
-    val listZip =      listOf(7, 8)
-    val list =         listOf(1, 2, 3, 4, 5, 6)
+    val listZip = listOf(7, 8)
+    val list = listOf(1, 2, 3, 4, 5, 6)
     val listRepeated = listOf(2, 2, 3, 4, 5, 5, 6)
 
     //merge
@@ -14,7 +13,7 @@ fun main(args: Array<String>) {
     //zip reemplaza a merge
     //Devuelve una lista de valores construidos a partir de elementos de ambas colecciones con los mismos índices
     // utilizando la función de transformación proporcionada. La lista tiene la longitud de la colección más corta.
-    println(list.zip(listRepeated) {it1, it2 -> it1 + it2}) //: [3, 4, 6, 8, 10, 11]
+    println(list.zip(listRepeated) { it1, it2 -> it1 + it2 }) //: [3, 4, 6, 8, 10, 11]
 
     /************************************** zip ***************************************/
     //Devuelve una lista de pares construidos a partir de los elementos de ambas colecciones con los mismos índices.

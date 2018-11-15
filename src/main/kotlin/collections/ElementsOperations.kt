@@ -9,7 +9,7 @@ fun main(args: Array<String>) {
     println(list.elementAt(2)) //: 3
 
     //retorno el elemento del index o la funcion si IndexOutOfBoundsException
-    println(list.elementAtOrElse(9, {it * 2})) //: 18
+    println(list.elementAtOrElse(9, { it * 2 })) //: 18
 
     println(list.elementAtOrNull(10)) //: null
 

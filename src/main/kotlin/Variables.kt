@@ -2,7 +2,7 @@ import java.util.*
 
 fun main(args: Array<String>) {
     val nombre = "Alejandro"
-    val apellido : String = "Ayala"
+    val apellido: String = "Ayala"
 
 //    nombre = "Manuel" no compila val es inmutable
 

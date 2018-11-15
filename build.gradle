@@ -2,7 +2,7 @@ group 'kotlin-exercises'
 version '1.0-SNAPSHOT'
 
 buildscript {
-    ext.kotlin_version = '1.2.51'
+    ext.kotlin_version = '1.2.61'
     ext.funKTionale_version = '1.2'
     ext.kovenant_version = '3.3.0'
     ext.coroutine_version = '0.23.4'

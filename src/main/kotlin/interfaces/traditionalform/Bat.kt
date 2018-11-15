@@ -1,6 +1,6 @@
 package interfaces.traditionalform
 
-class Bat: FlyingAnimal {
+class Bat : FlyingAnimal {
 
     override val wings = Wings()
 
