@@ -1,7 +1,6 @@
 package coroutine
 
-import kotlinx.coroutines.experimental.*
-import kotlin.coroutines.experimental.coroutineContext
+import kotlinx.coroutines.*
 
 /**
  * 9. Coroutine context and dispatchers
@@ -15,14 +14,15 @@ fun main(args: Array<String>) = runBlocking {
 
     val jobs = arrayListOf<Job>()
 
-    jobs += launch(Unconfined) {
+    jobs += launch(Dispatchers.Unconfined) {
         println("Unconfined: The thread is ${Thread.currentThread().name}")
     }
     jobs += launch(coroutineContext) {
         println("coroutineContext: The thread is ${Thread.currentThread().name}")
     }
-    jobs += launch(CommonPool) {
-        println("CommonPool: The thread is ${Thread.currentThread().name}")
+    // deprecated CommonPool
+    jobs += launch(Dispatchers.Default) {
+        println("Default: The thread is ${Thread.currentThread().name}")
     }
     jobs += launch(newSingleThreadContext("myThread")) {
         //very expensive resource

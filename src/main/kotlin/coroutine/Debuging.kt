@@ -1,8 +1,7 @@
 package coroutine
 
-import kotlinx.coroutines.experimental.async
-import kotlinx.coroutines.experimental.runBlocking
-import kotlin.coroutines.experimental.coroutineContext
+import kotlinx.coroutines.async
+import kotlinx.coroutines.runBlocking
 
 /**
  * 10. Debug

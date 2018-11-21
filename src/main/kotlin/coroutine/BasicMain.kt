@@ -1,15 +1,16 @@
 package coroutine
 
-import kotlinx.coroutines.experimental.delay
-import kotlinx.coroutines.experimental.launch
-import kotlinx.coroutines.experimental.runBlocking
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 
 /**
  * 1. Basic coroutine, Bridging blocking and non-blocking worlds
  */
 fun main(args: Array<String>) {
     // launch new coroutine in background and continue
-    launch {
+    GlobalScope.launch {
         delay(1000L)// non-blocking delay for 1 second
         print(" world!") // print after delay
     }

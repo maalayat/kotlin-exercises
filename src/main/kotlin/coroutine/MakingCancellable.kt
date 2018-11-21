@@ -1,7 +1,6 @@
-import kotlinx.coroutines.experimental.cancelAndJoin
-import kotlinx.coroutines.experimental.delay
-import kotlinx.coroutines.experimental.launch
-import kotlinx.coroutines.experimental.runBlocking
+package coroutine
+
+import kotlinx.coroutines.*
 
 /**
  * 5.1 Cancellation and timeouts
@@ -14,7 +13,7 @@ fun main(args: Array<String>) = runBlocking<Unit> {
     val job = launch {
         var nextPrintTime = startTime
         var i = 0
-        while (isActive) { // cancellable computation loop
+        while (GlobalScope.isActive) { // cancellable computation loop
             // print a message twice a second
             if (System.currentTimeMillis() >= nextPrintTime) {
                 println("I'm sleeping ${i++} ...")

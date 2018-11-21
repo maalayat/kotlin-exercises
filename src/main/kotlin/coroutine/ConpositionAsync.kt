@@ -1,8 +1,9 @@
 package coroutine
 
-import kotlinx.coroutines.experimental.async
-import kotlinx.coroutines.experimental.delay
-import kotlinx.coroutines.experimental.runBlocking
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.async
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.runBlocking
 import kotlin.system.measureTimeMillis
 
 /**
@@ -41,12 +42,12 @@ fun main(args: Array<String>) {
      */
 }
 
-fun doSomethingUsefulOneAsyn() = async {
+fun doSomethingUsefulOneAsyn() = GlobalScope.async {
     delay(1300L)
     13
 }
 
-fun doSomethingUsefulTwoAsync() = async {
+fun doSomethingUsefulTwoAsync() = GlobalScope.async {
     delay(1300L)
     29
 }

@@ -1,7 +1,7 @@
 package coroutine
 
-import kotlinx.coroutines.experimental.delay
-import kotlinx.coroutines.experimental.runBlocking
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.runBlocking
 import kotlin.system.measureTimeMillis
 
 /**
