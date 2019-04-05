@@ -1,4 +1,4 @@
-package SealedClases
+package sealedClases.event
 
 /**
  *  clase que define el contenido de un evento completo:

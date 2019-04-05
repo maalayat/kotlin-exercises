@@ -1,14 +1,23 @@
-package SealedClases
+package sealedClases.event
 
 fun main(args: Array<String>) {
 
     val events = listOf<Event>(
-        Event(ContentType.Text("Hola, soy Alejandro"), Direction.Incoming("alejo.ay")),
-        Event(ContentType.Audio("URL_AUDIO", 10), Direction.Incoming("alejo.ay")),
-        Event(ContentType.Image("URL_IMAGE", "caption:"), Direction.OutComing(DeliveryStatus.Delivered()))
+        Event(
+            ContentType.Text("Hola, soy Alejandro"),
+            Direction.Incoming("alejo.ay")
+        ),
+        Event(
+            ContentType.Audio("URL_AUDIO", 10),
+            Direction.Incoming("alejo.ay")
+        ),
+        Event(
+            ContentType.Image("URL_IMAGE", "caption:"),
+            Direction.OutComing(DeliveryStatus.Delivered())
+        )
     )
 
-    (events).map {
+    events.map {
         renderEvents(it)
     }
 

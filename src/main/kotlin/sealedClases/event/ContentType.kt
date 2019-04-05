@@ -1,4 +1,4 @@
-package SealedClases
+package sealedClases.event
 
 /**
  * tenemos tres tipos de eventos: Mensajes de Texto, Imágenes y Notas de Voz.

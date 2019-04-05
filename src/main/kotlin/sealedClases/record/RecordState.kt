@@ -1,4 +1,4 @@
-package SealedClases.record
+package sealedClases.record
 
 sealed class RecordState {
     class PreRecord : RecordState()

@@ -1,4 +1,4 @@
-package SealedClases.record
+package sealedClases.record
 
 import kotlin.properties.Delegates
 

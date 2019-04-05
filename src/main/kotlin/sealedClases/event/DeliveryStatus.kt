@@ -1,4 +1,4 @@
-package SealedClases
+package sealedClases.event
 
 /**
  * Esta clase sellada actuan como un enum realmente porque

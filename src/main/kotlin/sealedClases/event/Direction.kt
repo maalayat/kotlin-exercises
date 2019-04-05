@@ -1,4 +1,4 @@
-package SealedClases
+package sealedClases.event
 
 /**
  *
