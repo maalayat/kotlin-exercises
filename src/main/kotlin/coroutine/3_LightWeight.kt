@@ -7,7 +7,7 @@ import kotlinx.coroutines.runBlocking
 /**
  * 3. Coroutines ARE light-weight
  */
-fun main(args: Array<String>) = runBlocking {
+fun main() = runBlocking {
     // launches 100K coroutines and after a second, each coroutine prints a dot
     val jobList = List(100_000) {
         launch {

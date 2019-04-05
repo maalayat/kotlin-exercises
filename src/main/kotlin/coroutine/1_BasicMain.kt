@@ -8,7 +8,7 @@ import kotlinx.coroutines.runBlocking
 /**
  * 1. Basic coroutine, Bridging blocking and non-blocking worlds
  */
-fun main(args: Array<String>) {
+fun main() {
     // launch new coroutine in background and continue
     GlobalScope.launch {
         delay(1000L)// non-blocking delay for 1 second

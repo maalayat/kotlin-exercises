@@ -6,7 +6,7 @@ import kotlinx.coroutines.*
 /**
  * 6. Closing resources with finally
  */
-fun main(args: Array<String>) = runBlocking {
+fun main() = runBlocking {
     val job = launch {
         try {
             repeat(1000) {
@@ -33,7 +33,7 @@ suspend fun verify() {
 }
 
 suspend fun verifyAgain() {
-    println("try verify...")
+    println("try verify...again")
     delay(1000)
     println("...verify OK. Now this line print.")
 }

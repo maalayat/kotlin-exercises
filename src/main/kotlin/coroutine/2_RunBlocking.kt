@@ -8,7 +8,7 @@ import kotlinx.coroutines.runBlocking
  * 2. runBlocking to wrap the execution of the main function,
  *    Waiting for a job
  */
-fun main(args: Array<String>) = runBlocking {
+fun main() = runBlocking {
     // start main coroutine
     val job = launch { doWork() }
     print("Hello, ")

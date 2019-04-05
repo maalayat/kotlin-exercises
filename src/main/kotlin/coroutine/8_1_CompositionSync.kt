@@ -1,6 +1,5 @@
 package coroutine
 
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.runBlocking
 import kotlin.system.measureTimeMillis
 
@@ -10,7 +9,7 @@ import kotlin.system.measureTimeMillis
  * 8.1 We have two suspending functions, first doSomethingUsefulOne and then doSomethingUsefulTwo.
  * The coroutine, just like in the regular code, is sequential by default
  */
-fun main(args: Array<String>) = runBlocking {
+fun main() = runBlocking {
     val time = measureTimeMillis {
         val one = doSomethingUsefulOne()
         val two = doSomethingUsefulTwo()
@@ -19,18 +18,9 @@ fun main(args: Array<String>) = runBlocking {
     println("Completed in $time ms")
 
     /*
-    * The answer is 42
-    * Completed in 2609 ms
+    doSomethingUsefulOne
+    doSomethingUsefulTwo
+    The answer is 42
+    Completed in 2638 ms
     */
-}
-
-suspend fun doSomethingUsefulOne(): Int {
-    delay(1300L)
-    return 13
-
-}
-
-suspend fun doSomethingUsefulTwo(): Int {
-    delay(1300L)
-    return 29
 }
