@@ -5,7 +5,7 @@ import kotlinx.coroutines.*
 /**
  * 4. Coroutines are like daemon threads
  */
-fun main(args: Array<String>) = runBlocking {
+fun main() = runBlocking {
     val job = launch(Dispatchers.Default) {
         repeat(1000) {
             println("I'm sleeping $it...")
