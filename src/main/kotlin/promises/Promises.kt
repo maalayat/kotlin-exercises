@@ -19,7 +19,7 @@ import nl.komponents.kovenant.then
  * get                  waits until Promise completes and returns the value (blocking the thread)
  * then                 allows to transform one Promise into another
  */
-fun main(args: Array<String>) {
+fun main() {
     /*println("Call to dangerous slow service")
     println("The number is ${DangerousService.querySlowNumber()}")
     println("Finished")*/

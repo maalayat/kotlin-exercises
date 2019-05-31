@@ -14,7 +14,7 @@ import org.funktionale.either.*
  * right            returns RightProjection
  * fold             allows to specify what to do in each case
  */
-fun main(args: Array<String>) {
+fun main() {
 
     /**************** Dangerous code in Kotlin -> try-catch-finally ****************/
     /*val number: Long = try {
