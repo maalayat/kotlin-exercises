@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.3.31"
+    kotlin("jvm") version "1.4.31"
 }
 
 group = "ec.solmedia"
@@ -18,11 +18,14 @@ dependencies {
     // funKTionale: Functional constructs and patterns for Kotlin
     implementation("org.funktionale", "funktionale-either", "1.2")
 
+    // Arrow
+    implementation("io.arrow-kt:arrow-core:0.11.0")
+
     // Kovenant: Promises for Kotlin
-    implementation("nl.komponents.kovenant", "kovenant", "3.3.0")
+    implementation("nl.komponents.kovenant:kovenant:3.3.0")
 
     // Kotlin coroutines
-    implementation("org.jetbrains.kotlinx", "kotlinx-coroutines-core", "1.2.1")
+    implementation("org.jetbrains.kotlinx.kotlinx-coroutines-core:1.2.1")
 
 }
 
