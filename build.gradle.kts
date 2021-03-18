@@ -27,6 +27,8 @@ dependencies {
     // Kotlin coroutines
     implementation("org.jetbrains.kotlinx.kotlinx-coroutines-core:1.2.1")
 
+    // Koin
+    implementation("org.koin:koin-core:2.2.2")
 }
 
 tasks.withType<KotlinCompile> {
