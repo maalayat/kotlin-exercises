@@ -10,7 +10,7 @@ import kotlinx.coroutines.runBlocking
  * One key difference is that instead of a blocking "put" operation it has a suspending "send",
  * and instead of a blocking "take" operation it has a suspending "receive".
  */
-fun main(args: Array<String>) = runBlocking {
+fun main() = runBlocking {
     val channel = Channel<Int>()
 
     launch {

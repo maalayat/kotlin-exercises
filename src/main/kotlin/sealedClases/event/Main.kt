@@ -1,6 +1,6 @@
 package sealedClases.event
 
-fun main(args: Array<String>) {
+fun main() {
 
     val events = listOf<Event>(
         Event(

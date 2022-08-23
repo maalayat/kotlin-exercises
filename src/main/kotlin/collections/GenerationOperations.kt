@@ -1,7 +1,7 @@
 package collections
 
 
-fun main(args: Array<String>) {
+fun main() {
     val listZip = listOf(7, 8)
     val list = listOf(1, 2, 3, 4, 5, 6)
     val listRepeated = listOf(2, 2, 3, 4, 5, 5, 6)

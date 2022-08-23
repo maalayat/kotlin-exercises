@@ -2,7 +2,7 @@ package concurrency
 
 import java.util.concurrent.CountDownLatch
 
-fun main(ars: Array<String>) {
+fun main() {
     val latch = CountDownLatch(3)
 
     val waiter = Waiter(latch)

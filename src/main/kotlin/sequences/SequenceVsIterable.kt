@@ -6,7 +6,7 @@ package sequences
  *
  * Calculations are done in terminal operation like toList.
  */
-fun main(args: Array<String>) {
+fun main() {
 
     /************ sequences are lazy  **************************/
     val seq = sequenceOf(1, 2, 3)

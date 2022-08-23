@@ -1,6 +1,6 @@
 package interfaces.kotlinform
 
-fun main(args: Array<String>) {
+fun main() {
     val bat = Bat()
     val bird = Bird(AnimalWithWings())
 

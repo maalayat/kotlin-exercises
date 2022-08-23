@@ -1,6 +1,6 @@
 package laziness
 
-fun main(args: Array<String>) {
+fun main() {
     val person = Person("Alejandro Ayala", 33, City("Quito"))
 
     //aunque no este habilitado, la llamada person.toString() se realiza de cualquier forma

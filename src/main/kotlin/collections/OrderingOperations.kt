@@ -1,6 +1,6 @@
 package collections
 
-fun main(args: Array<String>) {
+fun main() {
     val unsortedList = listOf(3, 2, 7, 5)
 
     /********************************** reverse **********************************/

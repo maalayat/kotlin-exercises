@@ -11,7 +11,7 @@ import kotlinx.coroutines.runBlocking
  * If send is invoked first, then it is suspended until receive is invoked,
  * if receive is invoked first, it is suspended until send is invoked.
  */
-fun main(args: Array<String>) = runBlocking {
+fun main() = runBlocking {
     val channel = Channel<Int>(4)// create buffered channel
     val sender = launch {
         // launch sender coroutine

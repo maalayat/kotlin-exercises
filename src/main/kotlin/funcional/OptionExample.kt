@@ -17,7 +17,7 @@ import org.funktionale.option.toOption
  * forEach                 allows to use existing value in a functional block without returning anything
  * map                     allows to transform one option into another
  */
-fun main(args: Array<String>) {
+fun main() {
 
     val mayBeNum1: Option<Int> = generateNumber().toOption()
     val mayBeNum2: Option<Int> = generateNumber().toOption()

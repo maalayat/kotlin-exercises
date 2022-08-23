@@ -1,6 +1,6 @@
 package interfaces.delegation.pattern.kotlin
 
-fun main(args: Array<String>) {
+fun main() {
     val a = A()
     val b = B()
     C(a).f() //A: haciendo f()

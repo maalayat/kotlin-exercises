@@ -1,6 +1,6 @@
 package interfaces.traditionalform
 
-fun main(args: Array<String>) {
+fun main() {
     val bat = Bat()
     val bird = Bird()
 

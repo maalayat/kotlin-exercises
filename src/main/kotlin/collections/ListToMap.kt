@@ -5,7 +5,7 @@ val user2 = User("Sara", 25, listOf("Chess", "Board Games"))
 val user3 = User("Dave", 34, listOf("Games", "Racing sports"))
 
 
-fun main(args: Array<String>) {
+fun main() {
     val myList = listOf(user1, user2, user3)
     val myList2 = listOf("a", "b", "c", "d")
 
