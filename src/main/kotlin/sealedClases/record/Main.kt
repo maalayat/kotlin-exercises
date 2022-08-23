@@ -2,11 +2,11 @@ package sealedClases.record
 
 import kotlin.properties.Delegates
 
-var entero: Int by Delegates.observable(0) { property, oldValue, newValue ->
+var integer: Int by Delegates.observable(0) { property, oldValue, newValue ->
     println("Property:$property oldValue:$oldValue newValue:$newValue")
 }
 
-var recordState: RecordState by Delegates.observable<RecordState>(RecordState.PreRecord()) { property, oldValue, newValue ->
+var recordState: RecordState by Delegates.observable(RecordState.PreRecord()) { property, oldValue, newValue ->
     println("Property:$property oldValue:$oldValue newValue:$newValue")
     when (newValue) {
         is RecordState.PreRecord -> TODO()
@@ -16,7 +16,7 @@ var recordState: RecordState by Delegates.observable<RecordState>(RecordState.Pr
     }
 }
 
-fun main(ars: Array<String>) {
+fun main() {
 
 
 }

@@ -1,4 +1,4 @@
-fun main(args: Array<String>) {
+fun main() {
 
     logExecution { println("I'm a function") }
 
@@ -17,18 +17,18 @@ fun main(args: Array<String>) {
 }
 
 fun logExecution(func: () -> Unit) {
-    println("Befor execution function")
+    println("Before execution function")
     func()
     println("After execution function")
 }
 
 fun logExecutionParams(func: (String, String) -> Int) {
-    println("Befor execution function params")
-    val entero = func("Hola", "mundo")
-    println("After execution function params the value is $entero")
+    println("Before execution function params")
+    val integer = func("Hello", "world")
+    println("After execution function params the value is $integer")
 }
 
-//ejecutar una funcion en un hilo separado
+// run a function in a separate thread
 fun runAsync(func: () -> Unit) {
     Thread(Runnable { func() }).start()
 }

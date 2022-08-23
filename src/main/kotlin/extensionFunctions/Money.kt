@@ -1,4 +1,4 @@
-package ExtensionFunctions
+package extensionFunctions
 
 import java.math.BigDecimal
 

@@ -1,18 +1,18 @@
 import java.util.*
 
-fun main(args: Array<String>) {
-    val nombre = "Alejandro"
-    val apellido: String = "Ayala"
+fun main() {
+    val name = "Alejandro"
+    val lastName: String = "Ayala"
 
-//    nombre = "Manuel" no compila val es inmutable
+//    name = "Manuel" does not compile val is immutable
 
-    var edad = 13
+    var age = 13
 
-//    edad = "asdasd" fue inferido a entero no compila
+//    age = "asdasd" does not compile 'age' is a number
 
-    println("Escribe tu nombre y pulsa enter")
+    println("Enter your name and  y press enter")
     val input = Scanner(System.`in`)
     val nextLine = input.nextLine()
-    val nick = if (nextLine.isEmpty()) "Kotlin" else nextLine
-    print("Hola $nick!")
+    val nick = nextLine.ifEmpty { "Kotlin" }
+    print("Hi $nick!")
 }

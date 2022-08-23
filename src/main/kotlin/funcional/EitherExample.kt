@@ -42,6 +42,8 @@ fun main() {
     when (numberE) {
         is RightLike -> println("The generate numberE is ${numberE.right().get()}")
         is LeftLike -> println("ERROR: ${numberE.left().get().message}")
+        is Either.Left<Throwable, Long> -> TODO()
+        is Either.Right -> TODO()
     }
 
     println("===toDisjunction===")

@@ -1,6 +1,6 @@
 package nullable
 
-fun main(args: Array<String>) {
+fun main() {
 
     val a: String? = null
 

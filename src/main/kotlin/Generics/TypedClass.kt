@@ -15,7 +15,7 @@ class TypedClass3<out T> {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val t1 = TypedClass<String>("Hello world")
     /*Type argument is not within its bounds.
     Expected:
