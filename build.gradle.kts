@@ -19,13 +19,13 @@ dependencies {
     implementation("org.funktionale", "funktionale-either", "1.2")
 
     // Arrow
-    implementation("io.arrow-kt:arrow-core:0.11.0")
+    implementation("io.arrow-kt:arrow-core:1.1.2")
 
     // Kovenant: Promises for Kotlin
     implementation("nl.komponents.kovenant:kovenant:3.3.0")
 
     // Kotlin coroutines
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.3")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
 
     // Koin
     implementation("org.koin:koin-core:2.2.2")
