@@ -9,11 +9,10 @@ import kotlinx.coroutines.runBlocking
  */
 fun main() = runBlocking {
     // launches 100K coroutines and after a second, each coroutine prints a dot
-    val jobList = List(100_000) {
+    repeat(100_000) {
         launch {
             delay(1000)
-            print(".")
+            println(".")
         }
     }
-    jobList.forEach { it.join() } // wait for all jobs to complete
 }

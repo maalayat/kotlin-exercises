@@ -8,7 +8,7 @@ import kotlinx.coroutines.*
  *
  * It continues to print "I'm sleeping" even after cancellation
  */
-fun main() = runBlocking<Unit> {
+fun main() = runBlocking {
     val startTime = System.currentTimeMillis()
     val job = launch(Dispatchers.Default) {
         var nextPrintTime = startTime
